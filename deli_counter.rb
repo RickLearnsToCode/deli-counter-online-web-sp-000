@@ -6,7 +6,7 @@ def line(current_line)
     puts "The line is currently empty."
   else
     line_list = []
-    line_list << current_line.each_with_index {|name, index| "#{index+1} #{name}"}
+    current_line.each_with_index {|name, index| line_list << "#{index+1} #{name}"}
     puts line_list
   end
 end
