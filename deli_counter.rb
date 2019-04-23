@@ -9,6 +9,7 @@ def line(current_line)
     line_list << current_line.each_with_index {|name, index| "#{index+1} #{name}"}
     puts line_list
   end
+end
 
 def take_a_number(current_line, name)
   current_line << name
@@ -16,6 +17,7 @@ def take_a_number(current_line, name)
 end
 
 line(katz_deli)
+
 
 
   
