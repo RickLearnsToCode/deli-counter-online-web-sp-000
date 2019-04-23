@@ -9,7 +9,7 @@ def line(current_line)
     line_list = []
     current_line.each_with_index {|name, index| line_list << "#{index+1}. #{name}"}
     #puts line_list
-    puts "The Line is currently: #{line_list.join(" ")}"
+    puts "The line is currently: #{line_list.join(" ")}"
   end
 end
 
