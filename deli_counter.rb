@@ -21,6 +21,10 @@ end
 
 #line(katz_deli)
 def now_serving(current_line)
-  current_customer = current_line.shift
-  puts "Currently serving #{current_customer}"
+  if current_line.size > 0
+    current_customer = current_line.shift
+    puts "Currently serving #{current_customer}"
+  else
+    puts "The line is empty."
+  end
 end
