@@ -20,3 +20,7 @@ def take_a_number(current_line, name)
 end
 
 #line(katz_deli)
+def now_serving(current_line)
+  current_customer = current_line.shift
+  puts "Currently serving #{current_customer}"
+end
